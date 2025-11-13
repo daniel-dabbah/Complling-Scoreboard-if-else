@@ -1,4 +1,3 @@
-הה
 import streamlit as st
 from datetime import datetime, date
 import json
