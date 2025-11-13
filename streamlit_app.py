@@ -1,3 +1,4 @@
+הה
 import streamlit as st
 from datetime import datetime, date
 import json
@@ -20,21 +21,21 @@ st.markdown("""
     }
     
     .main .block-container {
-        background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
+        background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 50%, #bfdbfe 100%);
         min-height: 100vh;
     }
     
     .stApp {
-        background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 50%, #a7f3d0 100%);
+        background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #7dd3fc 100%);
     }
     
     .main-header {
         font-size: 2.8rem;
         font-weight: 700;
         text-align: center;
-        color: #14532d;
+        color: #0c4a6e;
         margin-bottom: 2.5rem;
-        background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+        background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -42,7 +43,7 @@ st.markdown("""
     }
     
     .topic-header {
-        background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+        background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
         color: white;
         padding: 1rem;
         border-radius: 12px;
@@ -50,7 +51,7 @@ st.markdown("""
         text-align: center;
         font-size: 1.4rem;
         font-weight: 600;
-        box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+        box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
     }
     
     .important-question {
@@ -83,12 +84,12 @@ st.markdown("""
     }
     
     .question-container {
-        background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+        background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
         padding: 2rem;
         border-radius: 18px;
         margin: 1.8rem 0;
-        border-right: 6px solid #4ade80;
-        box-shadow: 0 6px 20px rgba(74, 222, 128, 0.15);
+        border-right: 6px solid #38bdf8;
+        box-shadow: 0 6px 20px rgba(56, 189, 248, 0.15);
         direction: rtl;
         text-align: right;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -96,11 +97,11 @@ st.markdown("""
     
     .question-container:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(74, 222, 128, 0.25);
+        box-shadow: 0 8px 25px rgba(56, 189, 248, 0.25);
     }
     
     .question-container h4 {
-        color: #14532d;
+        color: #0c4a6e;
         font-weight: 500;
         font-size: 1.3rem;
         margin: 0;
@@ -113,21 +114,21 @@ st.markdown("""
         font-weight: bold;
         text-align: center;
         padding: 3rem;
-        background: linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #15803d 100%);
+        background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
         color: white;
         border-radius: 25px;
         margin: 2.5rem 0;
-        box-shadow: 0 10px 30px rgba(34, 197, 94, 0.4);
+        box-shadow: 0 10px 30px rgba(14, 165, 233, 0.4);
         direction: ltr;
     }
     
     .feedback-box {
-        background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+        background: linear-gradient(135deg, #ccfbf1 0%, #99f6e4 100%);
         padding: 2.2rem;
         border-radius: 18px;
         margin: 1.8rem 0;
-        border: 2px solid #6ee7b7;
-        box-shadow: 0 6px 20px rgba(110, 231, 183, 0.15);
+        border: 2px solid #5eead4;
+        box-shadow: 0 6px 20px rgba(94, 234, 212, 0.15);
         direction: rtl;
         text-align: center;
     }
@@ -144,12 +145,12 @@ st.markdown("""
     }
     
     .progress-stats {
-        background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+        background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
         padding: 2rem;
         border-radius: 18px;
-        box-shadow: 0 6px 20px rgba(34, 197, 94, 0.15);
+        box-shadow: 0 6px 20px rgba(14, 165, 233, 0.15);
         margin: 1.2rem 0;
-        border-top: 4px solid #22c55e;
+        border-top: 4px solid #0ea5e9;
         text-align: center;
         transition: transform 0.2s ease;
     }
@@ -159,61 +160,61 @@ st.markdown("""
     }
     
     .chart-container {
-        background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+        background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
         padding: 2rem;
         border-radius: 18px;
         margin: 2rem 0;
-        box-shadow: 0 6px 20px rgba(34, 197, 94, 0.15);
-        border: 1px solid #bbf7d0;
+        box-shadow: 0 6px 20px rgba(14, 165, 233, 0.15);
+        border: 1px solid #bae6fd;
     }
     
     .chart-title {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 600;
-        color: #14532d;
+        color: #0c4a6e;
         margin-bottom: 1.5rem;
     }
     
     .input-container {
-        background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+        background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
         padding: 2rem;
         border-radius: 18px;
         margin: 1.8rem 0;
-        border: 2px solid #bbf7d0;
-        box-shadow: 0 6px 20px rgba(34, 197, 94, 0.1);
+        border: 2px solid #bae6fd;
+        box-shadow: 0 6px 20px rgba(14, 165, 233, 0.1);
     }
     
     .guidance-container {
-        background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+        background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
         padding: 2.5rem;
         border-radius: 20px;
         margin: 2rem 0;
-        box-shadow: 0 8px 25px rgba(34, 197, 94, 0.15);
+        box-shadow: 0 8px 25px rgba(14, 165, 233, 0.15);
         direction: rtl;
         text-align: right;
-        border-right: 5px solid #22c55e;
+        border-right: 5px solid #0ea5e9;
     }
     
     .guidance-section {
         margin: 2rem 0;
         padding: 1.5rem;
-        background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+        background: linear-gradient(135deg, #ecfeff 0%, #cffafe 100%);
         border-radius: 15px;
-        border-right: 4px solid #10b981;
+        border-right: 4px solid #06b6d4;
     }
     
     .guidance-title {
         font-size: 1.4rem;
         font-weight: 600;
-        color: #065f46;
+        color: #164e63;
         margin-bottom: 1rem;
     }
     
     .guidance-list {
         margin-right: 1.5rem;
         line-height: 2;
-        color: #14532d;
+        color: #0c4a6e;
     }
     
     .guidance-list li {
@@ -238,10 +239,10 @@ st.markdown("""
         text-align: center;
         margin-top: 3rem;
         padding: 1.5rem;
-        background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+        background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
         border-radius: 15px;
         font-size: 1.3rem;
-        color: #14532d;
+        color: #1e40af;
         font-weight: 600;
     }
     
@@ -255,14 +256,14 @@ st.markdown("""
     
     .stTabs [data-baseweb="tab-list"] {
         gap: 2rem;
-        background: rgba(240, 253, 244, 0.5);
+        background: rgba(224, 242, 254, 0.5);
         padding: 0.5rem;
         border-radius: 15px;
         justify-content: center;
     }
     
     .stTabs [data-baseweb="tab"] {
-        background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+        background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
         border-radius: 12px;
         padding: 1rem 2rem;
         border: 2px solid transparent;
@@ -270,10 +271,10 @@ st.markdown("""
     }
     
     .stTabs [aria-selected="true"] {
-        background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+        background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
         color: white;
-        border-color: #22c55e;
-        box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+        border-color: #0ea5e9;
+        box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
     }
 </style>
 """, unsafe_allow_html=True)
@@ -397,8 +398,8 @@ def display_statistics_from_manual(scores_dict):
         current_score = valid_scores[-1] if valid_scores else 0
         st.markdown("""
         <div class="progress-stats">
-            <h3 style="color: #14532d; margin: 0;">הציון האחרון שלי</h3>
-            <h2 style="color: #22c55e; margin: 5px 0;">{}/100</h2>
+            <h3 style="color: #0c4a6e; margin: 0;">הציון האחרון שלי</h3>
+            <h2 style="color: #0ea5e9; margin: 5px 0;">{}/100</h2>
         </div>
         """.format(current_score), unsafe_allow_html=True)
     
@@ -406,8 +407,8 @@ def display_statistics_from_manual(scores_dict):
         best_score = max(valid_scores) if valid_scores else 0
         st.markdown("""
         <div class="progress-stats">
-            <h3 style="color: #14532d; margin: 0;">הציון הכי טוב שלי</h3>
-            <h2 style="color: #10b981; margin: 5px 0;">{}/100</h2>
+            <h3 style="color: #0c4a6e; margin: 0;">הציון הכי טוב שלי</h3>
+            <h2 style="color: #14b8a6; margin: 5px 0;">{}/100</h2>
         </div>
         """.format(best_score), unsafe_allow_html=True)
     
@@ -415,8 +416,8 @@ def display_statistics_from_manual(scores_dict):
         total_assessments = len(valid_scores)
         st.markdown("""
         <div class="progress-stats">
-            <h3 style="color: #14532d; margin: 0;">כמה הערכות הזנתי</h3>
-            <h2 style="color: #16a34a; margin: 5px 0;">{}</h2>
+            <h3 style="color: #0c4a6e; margin: 0;">כמה הערכות הזנתי</h3>
+            <h2 style="color: #06b6d4; margin: 5px 0;">{}</h2>
         </div>
         """.format(total_assessments), unsafe_allow_html=True)
 
@@ -477,7 +478,7 @@ def main():
     if st.session_state.active_tab == 0:
         # Tab 1: New Assessment
         if not st.session_state.show_results:
-            st.markdown("<div style='text-align: center; margin-bottom: 2rem;'><p style='font-size: 1.1rem; color: #14532d;'>תן לכל נושא ציון מ-1 (בכלל לא בטוח) עד 10 (מאוד בטוח) - לפי איך שאתה מרגיש ממש עכשיו.</p></div>", unsafe_allow_html=True)
+            st.markdown("<div style='text-align: center; margin-bottom: 2rem;'><p style='font-size: 1.1rem; color: #0c4a6e;'>תן לכל נושא ציון מ-1 (בכלל לא בטוח) עד 10 (מאוד בטוח) - לפי איך שאתה מרגיש ממש עכשיו.</p></div>", unsafe_allow_html=True)
             
             # Display all questions at once
             with st.form("assessment_form"):
@@ -567,7 +568,7 @@ def main():
             if feedback:
                 st.markdown(f"""
                 <div class="feedback-box">
-                    <p style="font-size: 1.1rem; margin: 0; text-align: center; color: #14532d; font-weight: 500;">{feedback}</p>
+                    <p style="font-size: 1.1rem; margin: 0; text-align: center; color: #0c4a6e; font-weight: 500;">{feedback}</p>
                 </div>
                 """, unsafe_allow_html=True)
             
@@ -590,7 +591,7 @@ def main():
     elif st.session_state.active_tab == 1:
         # Tab 2: Progress Tracking
         st.markdown("<h3 style='text-align: center;'>הזן את הציונים שלך</h3>", unsafe_allow_html=True)
-        st.markdown("<p style='text-align: center; color: #14532d; margin-bottom: 2rem;'>הזן ציונים מ-0 עד 100 עבור כל הערכה. הציונים יישמרו אוטומטית.</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center; color: #0c4a6e; margin-bottom: 2rem;'>הזן ציונים מ-0 עד 100 עבור כל הערכה. הציונים יישמרו אוטומטית.</p>", unsafe_allow_html=True)
         
         # Load existing scores
         manual_scores = load_manual_scores()
@@ -665,7 +666,7 @@ def main():
     
     else:  # active_tab == 2
         # Tab 3: How to Progress Towards the Goal
-        st.markdown('<h2 style="text-align: center; color: #15803d; margin-bottom: 2rem;">איך ניתן להתקדם אל המטרה</h2>', unsafe_allow_html=True)
+        st.markdown('<h2 style="text-align: center; color: #0369a1; margin-bottom: 2rem;">איך ניתן להתקדם אל המטרה</h2>', unsafe_allow_html=True)
         
         # Guidance container
         st.markdown('<div class="guidance-container">', unsafe_allow_html=True)
@@ -685,8 +686,8 @@ def main():
         
         # Section 2: Areas to maintain
         st.markdown("""
-        <div class="guidance-section" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-right-color: #4ade80;">
-            <div class="guidance-title" style="color: #14532d;">✨ בתחומים שבהם תרצו לשמר את הציון:</div>
+        <div class="guidance-section" style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); border-right-color: #38bdf8;">
+            <div class="guidance-title" style="color: #0c4a6e;">✨ בתחומים שבהם תרצו לשמר את הציון:</div>
             <ul class="guidance-list">
                 <li>קבעו חזרות קבועות על החומר</li>
                 <li><strong style="color: #000000; font-size: 1.4rem;">חשוב מאוד! לתרגל לתרגל לתרגל - כתבו תכניות וקוד בעצמכם! זאת הדרך היעילה ביותר להבין כמה שיותר חומר בכמה שפחות זמן</strong></li>
